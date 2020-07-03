@@ -1163,83 +1163,85 @@ main, footer, .privacy-policy__wrap {
       .steps .only-sm {
         display: inline-block; } }
 
-.review .swiper-container {
-  padding: 50px 25px;
-  margin-left: -25px;
-  margin-right: -25px; }
-.review__block {
-  padding: 45px 68px;
-  box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
-  border-radius: 10px; }
-  @media screen and (max-width: 1700px) {
-    .review__block {
-      padding: 45px 39px; } }
-  @media screen and (max-width: 865px) {
-    .review__block {
-      padding: 39px 33px; } }
+.review {
+  margin-bottom: 20px; }
+  .review .swiper-container {
+    padding: 50px 25px;
+    margin-left: -25px;
+    margin-right: -25px; }
+  .review__block {
+    padding: 45px 68px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; }
+    @media screen and (max-width: 1700px) {
+      .review__block {
+        padding: 45px 39px; } }
+    @media screen and (max-width: 865px) {
+      .review__block {
+        padding: 39px 33px; } }
+    @media screen and (max-width: 500px) {
+      .review__block {
+        padding: 37px 18px; } }
   @media screen and (max-width: 500px) {
-    .review__block {
-      padding: 37px 18px; } }
-@media screen and (max-width: 500px) {
-  .review .title-wrap {
-    height: 80px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: space-between;
-    margin-bottom: 25px; }
-    .review .title-wrap .review__name,
-    .review .title-wrap .review__org {
-      width: 50%;
-      margin: 0; }
-    .review .title-wrap .review__img {
+    .review .title-wrap {
       height: 80px;
-      width: 80px; } }
-.review__name {
-  font-size: 20px;
-  line-height: 26px; }
-  @media screen and (max-width: 865px) {
-    .review__name {
-      font-size: 16px;
-      line-height: 21px; } }
-.review__org {
-  font-size: 20px;
-  line-height: 48px;
-  text-transform: uppercase;
-  color: #999999;
-  margin-bottom: 24px; }
-  @media screen and (max-width: 865px) {
-    .review__org {
-      font-size: 16px;
-      line-height: 48px; } }
-.review__text {
-  font-size: 16px;
-  line-height: 24px;
-  height: 161px; }
-  @media screen and (max-width: 500px) {
-    .review__text {
-      height: 120px;
-      display: -webkit-box;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-      margin-bottom: 32px; } }
-.review__video.button {
-  display: flex;
-  align-items: center;
-  background: none;
-  border: 2px solid #F76201;
-  font-size: 13px;
-  line-height: 17px;
-  color: #FF6500; }
-  .review__video.button::after {
-    content: '';
-    margin-left: 13.6px;
-    display: inline-block;
-    width: 10px;
-    height: 12px;
-    background-image: url("images/play.svg");
-    background-position: center;
-    background-repeat: no-repeat; }
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-content: space-between;
+      margin-bottom: 25px; }
+      .review .title-wrap .review__name,
+      .review .title-wrap .review__org {
+        width: 50%;
+        margin: 0; }
+      .review .title-wrap .review__img {
+        height: 80px;
+        width: 80px; } }
+  .review__name {
+    font-size: 20px;
+    line-height: 26px; }
+    @media screen and (max-width: 865px) {
+      .review__name {
+        font-size: 16px;
+        line-height: 21px; } }
+  .review__org {
+    font-size: 20px;
+    line-height: 48px;
+    text-transform: uppercase;
+    color: #999999;
+    margin-bottom: 24px; }
+    @media screen and (max-width: 865px) {
+      .review__org {
+        font-size: 16px;
+        line-height: 48px; } }
+  .review__text {
+    font-size: 16px;
+    line-height: 24px;
+    height: 161px; }
+    @media screen and (max-width: 500px) {
+      .review__text {
+        height: 120px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        margin-bottom: 32px; } }
+  .review__video.button {
+    display: flex;
+    align-items: center;
+    background: none;
+    border: 2px solid #F76201;
+    font-size: 13px;
+    line-height: 17px;
+    color: #FF6500; }
+    .review__video.button::after {
+      content: '';
+      margin-left: 13.6px;
+      display: inline-block;
+      width: 10px;
+      height: 12px;
+      background-image: url("images/play.svg");
+      background-position: center;
+      background-repeat: no-repeat; }
 
 .whyScloud {
   margin-bottom: 118px; }
