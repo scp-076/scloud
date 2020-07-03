@@ -1356,8 +1356,7 @@ footer {
   font-size: 16px;
   line-height: 32px;
   color: #333333;
-  text-decoration: none;
-  text-align: center; }
+  text-decoration: none; }
 
 .footer-nav__item:hover > .footer-nav__item-link {
   text-decoration: underline; }
@@ -1368,7 +1367,8 @@ footer {
     overflow: hidden;
     transition: all .3s ease-in-out; } }
 .footer-nav .footer-nav__list-title.open + .footer-nav__list {
-  height: 200px; }
+  height: 200px;
+  text-align: center; }
 
 .privacy-policy {
   width: 100%;

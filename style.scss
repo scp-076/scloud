@@ -1747,7 +1747,6 @@ footer {
   line-height: 32px;
   color: #333333;
   text-decoration: none;
-  text-align: center;
 }
 
 .footer-nav__item:hover > .footer-nav__item-link {
@@ -1764,6 +1763,7 @@ footer {
 
 .footer-nav .footer-nav__list-title.open + .footer-nav__list {
   height: 200px;
+  text-align: center;
 }
 
 
