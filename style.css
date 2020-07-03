@@ -1318,7 +1318,7 @@ footer {
   padding-top: 58px; }
 
 .footer-nav__col {
-  width: 25%; }
+  width: 100%; }
 
 .footer-nav__col:not(:last-child) {
   padding-right: 25px; }
@@ -1368,7 +1368,7 @@ footer {
     overflow: hidden;
     transition: all .3s ease-in-out; } }
 .footer-nav .footer-nav__list-title.open + .footer-nav__list {
-  height: 180px; }
+  height: 200px; }
 
 .privacy-policy {
   width: 100%;

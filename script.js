@@ -55,9 +55,15 @@ $('.masked').mask('+7-999-999-99-99');
     });
 
     //меню в футере
-    $( '.btn-open-bar--js-left' ).click(function() {
-        $('.class-ul').toggleClass('open')
 
-    });
 
 })(jQuery);
+
+if (document.documentElement.scrollWidth <= 865){
+    document.querySelectorAll('.footer-nav__list-title').forEach(item => {
+        item.addEventListener('click', event => {
+            const justClicked = event.target;
+            justClicked.classList.toggle('open')
+        })
+    });
+}
