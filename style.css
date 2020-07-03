@@ -1324,12 +1324,11 @@ footer {
   padding-right: 25px; }
 
 .footer-nav__list-title {
-  margin-bottom: 2rem;
-  margin-top: 1rem;
   position: relative;
   font-weight: bold;
   font-size: 14px;
-  line-height: 18px; }
+  line-height: 18px;
+  margin: 1rem auto 2rem; }
 
 @media screen and (max-width: 865px) {
   .footer-nav__list-title {
