@@ -3,6 +3,8 @@
 $text-black: #333333;
 $text-grey: #6F6F6F;
 $text-lightGrey: #999999;
+$orange: #F76201;
+$green: #178A00;
 
 html {
   font-size: 16px;
@@ -53,7 +55,7 @@ h2 {
   cursor: pointer;
   text-align: center;
   border-radius: 45px;
-  background: linear-gradient(180deg, #F76201 0%, #FF4D00 100%);
+  background: linear-gradient(180deg, $orange 0%, #FF4D00 100%);
   color: #fff;
   font-weight: bold;
   font-family: "PT Sans Caption", sans-serif;
@@ -62,7 +64,7 @@ h2 {
   font-size: 14px;
   line-height: 18px;
   &--green{
-    background: linear-gradient(180deg, #40A800 0%, #178A00 100%);
+    background: linear-gradient(180deg, #40A800 0%, $green 100%);
   }
 }
 
@@ -74,7 +76,7 @@ h2 {
   font-weight: bold;
   font-size: 14px;
   line-height: 18px;
-  color: #F76201;
+  color: $orange;
   text-decoration: none;
   background: none;
   border: none;
@@ -96,7 +98,7 @@ h2 {
   font-size: 14px;
   line-height: 18px;
   text-decoration: underline;
-  color: #F76201;
+  color: $orange;
   &::after{
     content: '';
     display: inline-block;
@@ -154,7 +156,7 @@ h2 {
       margin-bottom: 22px;
     }
     &.active{
-      background: linear-gradient(180deg, #F76201 0%, #FF4D00 100%);
+      background: linear-gradient(180deg, $orange 0%, #FF4D00 100%);
       border-color: transparent;
       color: #fff;
       .badge{
@@ -168,7 +170,7 @@ h2 {
     padding: 1px 8px;
     min-width: 51px;
     border-radius: 40px;
-    background: linear-gradient(180deg, #F76201 0%, #FF4D00 100%);
+    background: linear-gradient(180deg, $orange 0%, #FF4D00 100%);
     color: #fff;
   }
 }
@@ -201,12 +203,12 @@ h2 {
 }
 
 .top-border-green {
-  border-top: 8px solid #178A00;
+  border-top: 8px solid $green;
   border-radius: 10px;
 }
 
 .top-border-orange {
-  border-top: 8px solid #F76201;
+  border-top: 8px solid $orange;
   border-radius: 10px;
 }
 
@@ -221,13 +223,13 @@ h2 {
 }
 
 .text-green-underline {
-  color: #178A00 !important;
+  color: $green !important;
   font-weight: bold;
   text-decoration: underline;
 }
 
 .text-orange {
-  color: #F76201 !important;
+  color: $orange !important;
   font-weight: bold;
 }
 
@@ -483,7 +485,7 @@ h2 {
   }
 
   &__lang span {
-    color: #F76201;
+    color: $orange;
     font-weight: bold;
     padding-right: 17px;
     margin-left: 33px;
@@ -520,7 +522,7 @@ h2 {
       color: $text-grey;
 
       &:hover {
-        color: #178A00;
+        color: $green;
       }
     }
   }
@@ -552,7 +554,7 @@ h2 {
       color: $text-grey;
 
       &:hover {
-        color: #178A00;
+        color: $green;
       }
     }
 
@@ -614,7 +616,7 @@ main, footer, .privacy-policy__wrap {
         display: block;
 
         &:hover {
-          color: #178A00;
+          color: $green;
         }
       }
     }
@@ -653,7 +655,7 @@ main, footer, .privacy-policy__wrap {
           color: $text-black;
 
           &:hover {
-            color: #178A00;
+            color: $green;
           }
         }
       }
@@ -690,7 +692,7 @@ main, footer, .privacy-policy__wrap {
       border: none;
       outline: none;
       background-color: transparent;
-      color: #F76201;
+      color: $orange;
       padding-left: 20px;
       position: relative;
       cursor: pointer;
@@ -709,7 +711,7 @@ main, footer, .privacy-policy__wrap {
     &__register {
       width: 176px;
       height: 48px;
-      background: linear-gradient(180deg, #F76201 0%, #FF4D00 100%);
+      background: linear-gradient(180deg, $orange 0%, #FF4D00 100%);
       color: #fff;
       border: none;
       outline: none;
@@ -768,7 +770,7 @@ main, footer, .privacy-policy__wrap {
       &__trial {
         width: 319px;
         height: 48px;
-        background: linear-gradient(180deg, #F76201 0%, #FF4D00 100%);
+        background: linear-gradient(180deg, $orange 0%, #FF4D00 100%);
         color: #fff;
         font-family: "PT Sans Caption", sans-serif;
         font-weight: bold;
@@ -782,7 +784,7 @@ main, footer, .privacy-policy__wrap {
       &__consult {
         border: none;
         outline: none;
-        color: #F76201;
+        color: $orange;
         background: url("images/arrow_right_orange.svg") right no-repeat;
         font-family: "PT Sans Caption", sans-serif;
         font-weight: bold;
@@ -930,7 +932,7 @@ main, footer, .privacy-policy__wrap {
           outline: none;
           background: transparent;
           width: 70px;
-          color: #178A00;
+          color: $green;
           padding: 0;
           font-family: "PT Sans Caption", sans-serif;
           font-size: 14px;
@@ -953,7 +955,7 @@ main, footer, .privacy-policy__wrap {
           outline: none;
           background: transparent;
           width: 70px;
-          color: #F76201;
+          color: $orange;
           padding: 0;
           font-family: "PT Sans Caption", sans-serif;
           font-size: 14px;
@@ -1043,7 +1045,7 @@ main, footer, .privacy-policy__wrap {
         outline: none;
         cursor: pointer;
         border-radius: 45px;
-        background: linear-gradient(180deg, #F76201 0%, #FF4D00 100%);
+        background: linear-gradient(180deg, $orange 0%, #FF4D00 100%);
         color: #fff;
         font-weight: bold;
         font-family: "PT Sans Caption", sans-serif;
@@ -1051,7 +1053,7 @@ main, footer, .privacy-policy__wrap {
       }
 
       &__text a {
-        color: #F76201;
+        color: $orange;
       }
     }
   }
@@ -1135,7 +1137,7 @@ main, footer, .privacy-policy__wrap {
     padding: 60px 70px;
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    border-top: 8px solid #F76201;
+    border-top: 8px solid $orange;
     @include max-media(wide-tablet){
       padding: 38px;
     }
@@ -1157,7 +1159,7 @@ main, footer, .privacy-policy__wrap {
       font-weight: bold;
       font-size: 48px;
       line-height: 62px;
-      color: #F76201;
+      color: $orange;
       @include max-media(tablet) {
         font-size: 24px;
         line-height: 32px;
@@ -1200,7 +1202,7 @@ main, footer, .privacy-policy__wrap {
       font-size: 20px;
       line-height: 29px;
       border-top: 1px solid #E4E4E4;
-      color: #F76201;
+      color: $orange;
       @include max-media(tablet){
         font-size: 16px;
       }
@@ -1253,11 +1255,11 @@ main, footer, .privacy-policy__wrap {
       }
     }
     &--green{
-      border-top: 8px solid #178A00;
+      border-top: 8px solid $green;
       .tariff-block__price-new,
       .tariff-block__list-title,
       .detail-link{
-        color: #178A00;
+        color: $green;
       }
       .tariff-block__item::before{
         background-image: url("images/checkmark_green.svg");
@@ -1369,7 +1371,7 @@ main, footer, .privacy-policy__wrap {
       background: #FFFFFF;
       box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
       border-radius: 10px;
-      border-top: 8px solid #F76201;
+      border-top: 8px solid $orange;
     }
     @include max-media(mobil){
       flex-basis: auto;
@@ -1454,13 +1456,13 @@ main, footer, .privacy-policy__wrap {
     &.active{
       position: relative;
       box-shadow: 0 0 0 11px #FFDAC1;
-      background: #F76201;
+      background: $orange;
       &::before,
       &::after{
         content: '';
         display: block;
         position: absolute;
-        background: #F76201;
+        background: $orange;
         border-radius: 50%;
       }
       &::before{
@@ -1581,7 +1583,7 @@ main, footer, .privacy-policy__wrap {
     display: flex;
     align-items: center;
     background: none;
-    border: 2px solid #F76201;
+    border: 2px solid $orange;
     font-size: 13px;
     line-height: 17px;
     color: #FF6500;
@@ -1624,7 +1626,7 @@ main, footer, .privacy-policy__wrap {
         margin-bottom: 44px;
 
         & h2 {
-          color: #178A00;
+          color: $green;
         }
 
         & span {
@@ -1643,7 +1645,7 @@ main, footer, .privacy-policy__wrap {
   }
 
   &__link {
-    color: #F76201;
+    color: $orange;
     display: block;
     background: url("images/arrow_right_orange.svg") right no-repeat;
     padding-right: 20px;
@@ -2122,7 +2124,7 @@ footer {
     background: #FFFFFF;
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    border-top: 8px solid #F76201;
+    border-top: 8px solid $orange;
   }
 
   .whyScloud {
