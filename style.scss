@@ -1363,7 +1363,7 @@ main, footer, .privacy-policy__wrap {
 
     }
     @include max-media(tablet){
-      flex: 0 0 calc(50% - 12px);;
+      flex: 0 0 calc(50% - 12px);
       margin-left: 0;
       margin-right: 0;
       margin-bottom: 40px;
@@ -1532,8 +1532,7 @@ main, footer, .privacy-policy__wrap {
     @include max-media(mobile){
       height: 80px;
       display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
+      flex-flow: column nowrap;
       align-content: space-between;
       margin-bottom: 25px;
       .review__name,
@@ -1573,8 +1572,8 @@ main, footer, .privacy-policy__wrap {
 
     @include max-media(mobile){
       height: 120px;
-      display: -webkit-box;
-      -webkit-box-orient: vertical;
+      display: flex;
+      flex-flow: column nowrap;
       overflow: hidden;
       margin-bottom: 32px;
     }

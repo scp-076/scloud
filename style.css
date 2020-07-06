@@ -1201,8 +1201,7 @@ main, footer, .privacy-policy__wrap {
     .review .title-wrap {
       height: 80px;
       display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
+      flex-flow: column nowrap;
       align-content: space-between;
       margin-bottom: 25px; }
       .review .title-wrap .review__name,
@@ -1236,8 +1235,8 @@ main, footer, .privacy-policy__wrap {
     @media screen and (max-width: 500px) {
       .review__text {
         height: 120px;
-        display: -webkit-box;
-        -webkit-box-orient: vertical;
+        display: flex;
+        flex-flow: column nowrap;
         overflow: hidden;
         margin-bottom: 32px; } }
   .review__video.button {
