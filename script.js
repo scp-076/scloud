@@ -9,11 +9,6 @@ btnCloud.addEventListener('click', () => {
     items.forEach((e) => {
         e.classList.toggle('hidden');
     });
-    let btnCloudImg = versionBoxes[0].querySelector('.btn-green-img');
-    btnCloudImg.src = btnCloudImg.src === "images/arrow_up_green.svg"
-        ? "images/arrow_down_green.svg"
-        : "images/arrow_up_green.svg";
-    console.log(btnCloudImg.src);
 });
 
 btnBox.addEventListener('click', () => {
@@ -22,10 +17,6 @@ btnBox.addEventListener('click', () => {
     items.forEach((e) => {
         e.classList.toggle('hidden');
     });
-    let btnBoxImg = versionBoxes[1].querySelector('.btn-orange-img');
-    btnBoxImg.src = btnBoxImg.src === "./images/arrow_up_orange.svg"
-        ? "./images/arrow_down_orange.svg"
-        : "./images/arrow_up_orange.svg"
 });
 
 $('.masked').mask('+7-999-999-99-99');
@@ -75,9 +66,11 @@ if (document.documentElement.scrollWidth <= 865){
 
 if (document.documentElement.scrollWidth <= 500){
     document.querySelector('.versions-wrap-mobile__block__head__btn-green').addEventListener('click', function(e) {
-        e.target.classList.toggle('open');
+        let btn = e.target;
+        btn.classList.toggle('open');
     });
     document.querySelector('.versions-wrap-mobile__block__head__btn-orange').addEventListener('click', function(e) {
-        e.target.classList.toggle('open');
+        let btn = e.target;
+        btn.classList.toggle('open');
     });
 }
