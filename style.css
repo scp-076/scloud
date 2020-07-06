@@ -745,8 +745,7 @@ main, footer, .privacy-policy__wrap {
             height: 100%;
             background-image: url("images/arrow_up_green.svg");
             background-repeat: no-repeat;
-            background-position: center;
-            transition: all .3s ease-in-out; }
+            background-position: center; }
           .versions-wrap-mobile__block__head__btn-green.open:after {
             transform: rotate(180deg); }
         .versions-wrap-mobile__block__head__btn-orange {
@@ -775,8 +774,7 @@ main, footer, .privacy-policy__wrap {
             height: 100%;
             background-image: url("images/arrow_up_orange.svg");
             background-repeat: no-repeat;
-            background-position: center;
-            transition: all .3s ease-in-out; }
+            background-position: center; }
           .versions-wrap-mobile__block__head__btn-orange.open:after {
             transform: rotate(180deg); }
       .versions-wrap-mobile__block__item {

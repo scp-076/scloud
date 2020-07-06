@@ -23,7 +23,7 @@ $('.masked').mask('+7-999-999-99-99');
 
 
 (function($) {
-// кнопочка показать больше в разделе интеграции
+// show more button in integration section
     $( document ).ready(function() {
         $('.integration__more-button').click(function(){
             $('.integration__wrap').toggleClass('open')
@@ -32,7 +32,7 @@ $('.masked').mask('+7-999-999-99-99');
     });
 
 
-    //слайдер с отзывами
+    //feedback slider
     let mySwiper = new Swiper ('.swiper-container', {
         pagination: {
             el: '.swiper-pagination',
@@ -50,27 +50,26 @@ $('.masked').mask('+7-999-999-99-99');
         }
     });
 
-    //меню в футере
+    //footer menu
 
 
 })(jQuery);
 
 if (document.documentElement.scrollWidth <= 865){
     document.querySelectorAll('.footer-nav__list-title').forEach(item => {
-        item.addEventListener('click', event => {
-            const justClicked = event.target;
+        item.addEventListener('click', e => {
+            const justClicked = e.target;
             justClicked.classList.toggle('open')
         })
     });
 }
 
-if (document.documentElement.scrollWidth <= 500){
-    document.querySelector('.versions-wrap-mobile__block__head__btn-green').addEventListener('click', function(e) {
-        let btn = e.target;
-        btn.classList.toggle('open');
-    });
-    document.querySelector('.versions-wrap-mobile__block__head__btn-orange').addEventListener('click', function(e) {
+let changeBtnArrowOrient = (selector) => {
+    document.querySelector(selector).addEventListener('click', (e) => {
         let btn = e.target;
         btn.classList.toggle('open');
     });
 }
+
+changeBtnArrowOrient('.versions-wrap-mobile__block__head__btn-green');
+changeBtnArrowOrient('.versions-wrap-mobile__block__head__btn-orange');

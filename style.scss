@@ -952,7 +952,6 @@ main, footer, .privacy-policy__wrap {
             background-image: url("images/arrow_up_green.svg");
             background-repeat: no-repeat;
             background-position: center;
-            transition: all .3s ease-in-out;
           }
 
           &.open:after {
@@ -988,7 +987,6 @@ main, footer, .privacy-policy__wrap {
             background-image: url("images/arrow_up_orange.svg");
             background-repeat: no-repeat;
             background-position: center;
-            transition: all .3s ease-in-out;
           }
 
           &.open:after {
