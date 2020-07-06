@@ -941,9 +941,22 @@ main, footer, .privacy-policy__wrap {
           top: 115px;
           left: 117px;
 
-          & img {
-            max-width: 9px;
-            max-height: 5px;
+          &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 12px;
+            height: 100%;
+            background-image: url("images/arrow_up_green.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+            transition: all .3s ease-in-out;
+          }
+
+          &.open:after {
+            transform: rotate(180deg);
           }
         }
 
@@ -964,9 +977,22 @@ main, footer, .privacy-policy__wrap {
           top: 115px;
           left: 117px;
 
-          & img {
-            max-width: 9px;
-            max-height: 5px;
+          &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 12px;
+            height: 100%;
+            background-image: url("images/arrow_up_orange.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+            transition: all .3s ease-in-out;
+          }
+
+          &.open:after {
+            transform: rotate(180deg);
           }
         }
       }
@@ -2183,7 +2209,7 @@ footer {
     padding-right: 17px;
     cursor: pointer;
   }
-  .footer-nav__list-title::after {
+  .footer-nav__list-title:after {
     content: '';
     display: block;
     position: absolute;
@@ -2196,7 +2222,7 @@ footer {
     background-position: center;
     transition: all .3s ease-in-out;
   }
-  .footer-nav__list-title.open::after {
+  .footer-nav__list-title.open:after {
     transform: rotate(180deg);
   }
 }

@@ -735,9 +735,20 @@ main, footer, .privacy-policy__wrap {
           position: absolute;
           top: 115px;
           left: 117px; }
-          .versions-wrap-mobile__block__head__btn-green img {
-            max-width: 9px;
-            max-height: 5px; }
+          .versions-wrap-mobile__block__head__btn-green:after {
+            content: '';
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 12px;
+            height: 100%;
+            background-image: url("images/arrow_up_green.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+            transition: all .3s ease-in-out; }
+          .versions-wrap-mobile__block__head__btn-green.open:after {
+            transform: rotate(180deg); }
         .versions-wrap-mobile__block__head__btn-orange {
           display: none;
           justify-content: space-between;
@@ -754,9 +765,20 @@ main, footer, .privacy-policy__wrap {
           position: absolute;
           top: 115px;
           left: 117px; }
-          .versions-wrap-mobile__block__head__btn-orange img {
-            max-width: 9px;
-            max-height: 5px; }
+          .versions-wrap-mobile__block__head__btn-orange:after {
+            content: '';
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 12px;
+            height: 100%;
+            background-image: url("images/arrow_up_orange.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+            transition: all .3s ease-in-out; }
+          .versions-wrap-mobile__block__head__btn-orange.open:after {
+            transform: rotate(180deg); }
       .versions-wrap-mobile__block__item {
         display: flex;
         align-items: center;
@@ -1592,7 +1614,7 @@ footer {
     padding-right: 17px;
     cursor: pointer; }
 
-  .footer-nav__list-title::after {
+  .footer-nav__list-title:after {
     content: '';
     display: block;
     position: absolute;
@@ -1605,7 +1627,7 @@ footer {
     background-position: center;
     transition: all .3s ease-in-out; }
 
-  .footer-nav__list-title.open::after {
+  .footer-nav__list-title.open:after {
     transform: rotate(180deg); } }
 @media screen and (min-width: 500.5px) and (max-width: 864.5px) {
   .steps__col {
